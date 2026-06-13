@@ -1,23 +1,279 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>StudentAssist</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7ff;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(135deg,#0066ff,#00c6ff);
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+header h1{
+font-size:3.5rem;
+margin-bottom:15px;
+}
+
+header p{
+font-size:1.2rem;
+max-width:700px;
+margin:auto;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:white;
+color:#0066ff;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:70px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:2.2rem;
+margin-bottom:40px;
+color:#0066ff;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#0066ff;
+}
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.price-box{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.price-box h3{
+color:#0066ff;
+}
+
+.price{
+font-size:2rem;
+margin:15px 0;
+font-weight:bold;
+}
+
+.about{
+background:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.contact{
+background:linear-gradient(135deg,#0066ff,#0099ff);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.contact p{
+margin:10px 0;
+font-size:1.1rem;
+}
+
+.email-btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 30px;
+background:white;
+color:#0066ff;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:2.4rem;
+}
+
+header p{
+font-size:1rem;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
-<h1>StudentAssist</h1>
+<header>
+
+<h1>🎓 StudentAssist</h1>
 
 <p>
-Project Files | PPTs | Resume Services
+Professional Project Files, PPT Presentations, Resume Building,
+Poster Designing and Academic Support for Students.
 </p>
 
-<h2>Our Services</h2>
+<a href="mailto:atharvaaa1311@gmail.com" class="btn">
+📧 Contact By Email
+</a>
 
-<ul>
-<li>Project Files</li>
-<li>PPT Design</li>
-<li>Resume Building</li>
-</ul>
+</header>
+
+<section class="container">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📚 Project Files</h3>
+<p>Professional and attractive project file preparation.</p>
+</div>
+
+<div class="card">
+<h3>📊 PPT Design</h3>
+<p>Modern PowerPoint presentations for school and college students.</p>
+</div>
+
+<div class="card">
+<h3>📄 Resume Building</h3>
+<p>ATS-friendly resumes for students and freshers.</p>
+</div>
+
+<div class="card">
+<h3>🎨 Poster Design</h3>
+<p>Creative posters, certificates and graphic designs.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">Pricing</h2>
+
+<div class="pricing">
+
+<div class="price-box">
+<h3>PPT Design</h3>
+<div class="price">₹199+</div>
+<p>Professional Slides</p>
+</div>
+
+<div class="price-box">
+<h3>Resume</h3>
+<div class="price">₹149+</div>
+<p>Modern Resume Design</p>
+</div>
+
+<div class="price-box">
+<h3>Project File</h3>
+<div class="price">₹399+</div>
+<p>Complete Formatting & Design</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2 class="section-title">Why Choose Us?</h2>
+
+<p>
+Fast Delivery • Affordable Pricing • Student Friendly • Professional Quality
+</p>
+
+</section>
+
+<section class="contact">
+
+<h2>Need Any Academic Help?</h2>
+
+<p>Email us directly:</p>
+
+<p><strong>atharvaaa1311@gmail.com</strong></p>
+
+<a class="email-btn" href="mailto:atharvaaa1311@gmail.com">
+Send Email
+</a>
+
+</section>
+
+<footer>
+
+© 2026 StudentAssist | Made By Atharva
+
+</footer>
 
 </body>
 </html>
